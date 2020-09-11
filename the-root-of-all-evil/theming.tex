@@ -1,0 +1,105 @@
+%%%%%%%%%%%%%%%%%%%%%
+%  C O L O R -- Begin
+
+\definecolor{33c3Teal}{RGB}{0,156,139}
+\definecolor{33c3Purple}{RGB}{91,68,151}
+\definecolor{33c3Yellow}{RGB}{255,244,95}
+\definecolor{33c3Salmon}{RGB}{229,76,139}
+\definecolor{33c3Blue}{RGB}{0,113,193}
+\definecolor{33c3Gray}{RGB}{70,71,73}
+\definecolor{33c3Green}{RGB}{141,193,35}
+\definecolor{33c3Red}{RGB}{255,38,60}
+\definecolor{33c3White}{RGB}{255,255,255}
+
+\setbeamercolor{normal text}{%
+    fg=black,
+    bg=black!2
+}
+
+\setbeamertemplate{title separator}{
+	\begin{tikzpicture}
+	\draw[fg, fill=fg] (0,0) rectangle (\textwidth, 0.5pt);
+	\end{tikzpicture}%
+	\par%
+}
+
+\setbeamercolor{frametitle}{%
+    use=palette primary,
+    parent=palette primary,
+    bg=33c3Gray
+}
+\setbeamercolor{alerted text}{%
+  fg=33c3Teal%
+}
+\setbeamercolor{example text}{%
+  fg=33c3Blue%
+}
+
+%  C O L O R -- End
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  M I S C  M O D I F I C A T I O N S -- Begin
+
+% Make the footline gray
+\setbeamercolor{footline}{fg=33c3Gray}
+
+\setbeamercolor{section page}{bg=33c3Gray}
+
+% Display the hashtag in the footer
+%\setbeamertemplate{frame footer}{\docHashtag{}}
+
+% Color `standout` (aka `plain`)
+%\providebool{metropolis@standout}
+%\define@key{beamerframe}{standout}[true]{%
+%    \booltrue{metropolis@standout}
+%    \begingroup
+%        \setkeys{beamerframe}{c}
+%        %\setkeys{beamerframe}{noframenumbering}
+%        \ifbeamercolorempty[bg]{palette primary}{
+%            \setbeamercolor{background canvas}{
+%                use=palette primary,
+%                bg=-palette primary.fg
+%            }
+%        }{
+%            \setbeamercolor{background canvas}{
+%                use=palette primary,
+%                bg=33c3Gray
+%            }
+%        }
+%    \setbeamertemplate{frame footer}{}
+%    \setbeamertemplate{frame numbering}[none]
+%    \centering
+%    \usebeamercolor[fg]{palette primary}
+%    \usebeamerfont{standout}
+%}
+%\apptocmd{\beamer@reseteecodes}{%
+%    \ifbool{metropolis@standout}{
+%        \endgroup
+%        \boolfalse{metropolis@standout}
+%    }{}
+%}{}{}
+
+
+% Thicker progress bar
+% Below frame title:
+%\setlength{\metropolis@progressinheadfoot@linewidth}{1pt}
+% On the section page:
+%\setlength{\metropolis@progressonsectionpage@linewidth}{1pt}
+
+% Darker Section page
+%    \AtBeginSection{
+%    \begingroup
+%    \setbeamercolor{background canvas}{bg=33c3Gray}
+%    \setbeamercolor{normal text}{fg=33c3White}
+%    \ifbeamer@inframe
+%      \sectionpage
+%    \else
+%      \frame[plain,c,noframenumbering]{\sectionpage}
+%    \fi
+%\endgroup
+%}
+
+
+%  M I S C  M O D I F I C A T I O N S -- End
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
